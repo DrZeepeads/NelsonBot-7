@@ -19,4 +19,3 @@ export const useChat = () => {
 
   return { messages, isLoading, sendChatMessage };
 };
-
