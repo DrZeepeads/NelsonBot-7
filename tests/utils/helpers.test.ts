@@ -20,4 +20,3 @@ describe('Helper Functions', () => {
     });
   });
 });
-
