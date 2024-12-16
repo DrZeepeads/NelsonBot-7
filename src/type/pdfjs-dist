@@ -1,3 +1,0 @@
-declare module 'pdfjs-dist' {
-  export const getDocument: (src: string | { url: string }) => any;
-}
