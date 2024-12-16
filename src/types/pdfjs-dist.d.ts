@@ -1,22 +1,18 @@
 declare module 'pdfjs-dist' {
-  export const getDocument: (src: string | { url: string }) => {
-    promise: Promise<PDFDocumentProxy>;
+  type PDFDocumentProxy = {
+    numPages: number;
+    getPage: (pageNum: number) => Promise<PDFPageProxy>;
   };
 
-  export interface PDFDocumentProxy {
-    numPages: number;
-    getPage: (pageNumber: number) => Promise<PDFPageProxy>;
-  }
-
-  export interface PDFPageProxy {
+  type PDFPageProxy = {
     getTextContent: () => Promise<PDFTextContent>;
-  }
+  };
 
-  export interface PDFTextContent {
-    items: PDFTextItem[];
-  }
+  type PDFTextContent = {
+    items: Array<{ str: string }>;
+  };
 
-  export interface PDFTextItem {
-    str: string;
-  }
+  export const getDocument: (
+    src: string | { url: string }
+  ) => { promise: Promise<PDFDocumentProxy> };
 }
