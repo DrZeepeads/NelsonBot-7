@@ -19,4 +19,3 @@ describe('ChatInterface', () => {
     expect(screen.getByText('Hello, NelsonBot!')).toBeInTheDocument();
   });
 });
-
