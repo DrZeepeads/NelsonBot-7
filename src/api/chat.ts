@@ -33,4 +33,3 @@ export const getCloudinaryData = async (query: string): Promise<string> => {
     throw error;
   }
 };
-
