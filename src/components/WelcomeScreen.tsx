@@ -48,4 +48,3 @@ const WelcomeScreen: React.FC = () => {
 };
 
 export default WelcomeScreen;
-
