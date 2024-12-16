@@ -13,4 +13,3 @@ export async function loadPDFData(url: string): Promise<string> {
 
   return fullText;
 }
-
