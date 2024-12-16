@@ -5,4 +5,3 @@ export const parseResponse = (response: string): { type: string; content: string
   }
   return { type: 'text', content: response };
 };
-
