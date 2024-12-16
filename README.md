@@ -19,4 +19,3 @@ NelsonBot is an AI-powered pediatric assistant based on the Nelson Textbook of P
 ## Building for Production
 
 To create a production build, run:
-
